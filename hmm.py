@@ -199,7 +199,7 @@ for train_index, test_index in kf.split(sentences):
             for i in range(min(len(subs), len(state_pre))):
                 if subs[i][0] == state_pre[i]:
                     sen_acc += 1
-            acc += sen_acc / len(subs)
+            acc += sen_acc / len(state_pre)
         else:
             acc += 1
 
